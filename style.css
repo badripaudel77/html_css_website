@@ -1,0 +1,239 @@
+*{
+
+	box-sizing: border-box;
+}
+
+/* header section */
+
+.heading_section {
+
+	width: 100%; 
+	/* optional by default block level elements use 100 percent*/
+	background-color: black;
+	padding: 7px 14px;
+}
+
+.heading_section >div > a{
+	color : orange;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.list_items {
+
+	list-style-type: none;
+    margin: 15px;
+}
+
+.heading_section .navbar .list_items .list_item a{
+  text-decoration: none;
+  color :  white;
+}
+
+.heading_section .navbar .list_items .list_item a:hover{
+  background: green;
+  color: orange;
+}
+/* make nav menu fixed  */
+.heading_section {
+  position: fixed;
+   margin-top: -25px;
+ }
+
+.heading_section > div{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar {
+	display: inline-block;
+	
+	vertical-align: middle;
+
+}
+
+.brand_header img {
+    height: 32px;
+}
+
+.list_item {
+	display: inline-block;
+   margin: 0 16px;
+
+ }
+
+.list_item__sec{
+
+background: red;
+border-radius: 3px;
+color : white;
+font-weight: bold;	
+}
+
+
+ #show_page > img{
+ 	min-height: 200px;
+ 	text-align: center;
+	width: 105%;
+	height: 40%;
+	margin-top:0;
+/* 	position: relative;
+ */} 
+
+/* #show_page h2 {
+	color: green;
+} */
+
+/* advertize setions */
+.advertize {
+	background: white;
+	color: black;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	margin : 8px;
+	border :  2px solid orange;
+	text-align: center;
+}
+
+/* plan heeading */
+.plan_heading {
+	color : brown;
+	text-align: center;
+}
+
+/* recommended package */
+
+.recommend {
+   border :  2px solid;
+	background: darkgreen;
+	color: white;
+   box-shadow: 3px 3px 3px 3px #888888;
+}
+
+.recommend_heading {
+	background: white;
+	color : green !important;
+	border-radius: 5px;
+	padding: 6px;
+	text-align: center;
+	width: 80%;
+	margin-left: 35px;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6);
+
+  
+}
+
+.adv_features, .essesintial_features{
+	list-style-type: none;
+	margin: 5px;
+	padding: 3px;
+}
+
+.plan_title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.plan_price {
+	color : black;
+}
+
+.redirect_link {
+	background-color: black;
+	color : white;
+	text-decoration: none;
+	font-weight: bold;
+ 	margin-left: 160px;
+    font: inherit;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.redirect_link:hover{
+	background: white;
+	color: lightgreen;
+}
+
+/* alert section while clicking the link  */
+#show_alert {
+	background: gray;
+	height: 200px;
+	width: 300px;
+	margin: auto;
+ 	display: none;
+ }
+.show_alert h2 {
+	padding: 30px;
+	margin-top: 55px;
+}
+
+#no_alert {
+background-color: green;
+color: black;
+margin-right: 30px;
+float: right;
+display: inline-block;
+width: 70px;
+}
+
+#yes_alert{
+background-color: red;
+color: black;
+display: inline-block;
+margin-left: 40px;
+float:left;
+width: 70px;
+}
+
+/* footer main section */
+
+.main_footer {
+	background: black;
+	color : white;
+}
+
+/* footer ul */
+.footer_links {
+ list-style-type: none;
+ text-align: center;
+ margin: 0;
+ padding: 0;
+}
+
+/* footer ul > li */
+.footer_link {
+	margin : 10px 16px;
+	display: inline-block;
+	padding: 20px;
+}
+
+/* anchor at footer */
+.main_footer a {
+	text-decoration: none;
+	color : white;
+	padding: 20px;
+}
+.right_float a {
+	float: right;
+}
+
+/*
+  responsive design 
+  if(max-widht =<640px){ 
+	  apply code inside of here
+  }
+ */
+ @media(max-width:640px) {
+	 .advertize,.recommend{
+		display: block;
+		width:100%;
+		margin:auto;
+		text-align: center;
+	 }
+	 .advertize a{
+		color:red;
+		margin:auto;
+ 	}
+ }
